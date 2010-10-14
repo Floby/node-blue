@@ -1,0 +1,22 @@
+{
+    "name": "blue",
+    "version": "0.1.0beta",
+    "description": "JSP-like and streamed template engine",
+    "keywords": ["template", "jsp", "stream", "streamed"],
+    "url": "http://github.com/Floby/node-blue",
+    "author": {
+	"name": "Florent Jaby",
+	"email": "florent.jaby@gmail.com",
+	"url": "http://github.com/Floby"
+    },
+
+    "main": "./lib/blue",
+    "repository": {
+	"type": "git",
+	"url": "http://github.com/Floby/node-blue.git"
+    },
+    
+    "engines": {
+	"node": ">= 0.2.2"
+    }
+}

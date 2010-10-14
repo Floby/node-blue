@@ -1,0 +1,3 @@
+<div>
+    <%@ 'paragraphe.tpl' %>
+</div>
