@@ -25,7 +25,7 @@ buffers the results of the current template until it can be sent.
 blue exports a `Template` class which you'll need to instanciate
 
 	var Template = require('blue').Template;
-	var template = new Template('mytemplate.tpl', {dummy='dummy'})
+	var template = new Template('mytemplate.tpl', {dummy:'dummy'})
 	template.on('data', function(data) {
 	  sys.print(data);
 	})
