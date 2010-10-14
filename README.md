@@ -16,7 +16,7 @@ Blue is a simple JSP-like, streamed template engine for [NodeJS](http://github.c
 ### Plus
 
 The major interest of Blue resides in its streamed nature. When working with templates, you
-are very likely to include templates from templates which were include from other templates.
+are very likely to include templates from templates which were included from other templates.
 The Blue engine doesn't wait for an included file to be read, compiled and processed. It just
 buffers the results of the current template until it can be sent.
 
@@ -53,7 +53,7 @@ write `data` out and `include('filename')` will process `filename` as a template
 result where the call was made. `filename` can be a relative or absolute path.
 
 * `<%= {expression} %>` is a shortcut for print({expression}).
-* `<%@ 'filename' %>` is a shortcut for include(filename). Note that if it is constant, cotes
+* `<%@ 'filename' %>` is a shortcut for include(filename). Note that if it is constant, quotes
 must be used.
 
 	<html>
