@@ -72,7 +72,9 @@ must be used.
 	  <%@ 'paragraph.tpl' %>
 	</html>
 
-## TODO
+
+
+## To-do's
 obvisouly there is a lot left to do, but here are some things I already thought of
 * Fully implement the Stream interface
 * add support for functions with callback
