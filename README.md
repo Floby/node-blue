@@ -15,7 +15,7 @@ Blue is a simple JSP-like, streamed template engine for [NodeJS](http://github.c
 
 ### Plus
 
-THe major interest of Blue resides in its streamed nature. When working with templates, you
+The major interest of Blue resides in its streamed nature. When working with templates, you
 are very likely to include templates from templates which were include from other templates.
 The Blue engine doesn't wait for an included file to be read, compiled and processed. It just
 buffers the results of the current template until it can be sent.
@@ -40,9 +40,9 @@ the Template class follow more or less the Readable Stream interface (I plan on 
 * `run()` : Runs the template
 
 ### Events
-* `data : function(data)`  emitted when a new chunk of data is available
-* `end : function()` emitted when the template has been fully processed
-* `error : function(err)` emitter when some kind of error happens, most likely, it's an exception that has been caught
+* `'data' : function(data)`  emitted when a new chunk of data is available
+* `'end' : function()` emitted when the template has been fully processed
+* `'error' : function(err)` emitter when some kind of error happens, most likely to be an exception that has been caught
 
 ### Template syntax
 
@@ -61,14 +61,14 @@ must be used.
 	    <title> <%= data.title /* accessing passed in data */ %> </title>
 	  </head>
 	  <body>
-	  </body>
 	  <ul>
 	  <%
 	    for(var i = 0 ; i<5 ; ++i) {
-		print('<li>'+ i +'</li>');
+	      print('<li>'+ i +'</li>');
 	    }
 	  %>
 	  </ul>
+	  </body>
 	  <%@ 'paragraph.tpl' %>
 	</html>
 
