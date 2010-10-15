@@ -1,0 +1,3 @@
+- Fully implement the Stream interface for the Template class
+- add support for functions with callback and streams
+- Add tests and benchmarks
