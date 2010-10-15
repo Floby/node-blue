@@ -2,7 +2,7 @@
 
 var sys	    = require('sys'),
     blue    = require('./lib/blue');
-var t = new blue.Template('main.tpl');
+var t = new blue.Template('example/main.tpl');
 t.on('data', function(data) {
     sys.print(data);
 });
