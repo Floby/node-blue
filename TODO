@@ -1,6 +1,5 @@
 - Fully implement the Stream interface for the Template class
 - configuration of <% %> some people seem to not like it =)
 - caching, then smart caching, you know what, let's go to the smart one directly
-- add extendable filters
 - add support for functions with callback and streams
 - Add tests and benchmarks

@@ -3,7 +3,7 @@
 	<title>Coucou</title>
     </head>
     <body>
-	<%= "oui" %>
+	<%= "OUI" | lowercase %>
 	<%= data.require('sys') %>
 	<%@ "paragraphe.tpl" %>
 	<%@ "div.tpl" %>
