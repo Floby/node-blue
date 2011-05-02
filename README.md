@@ -57,7 +57,7 @@ result where the call was made. `filename` can be a relative or absolute path.
 must be used.
 
 
-```javascript
+```jsp
 <html>
   <head>
     <title> <%= data.title /* accessing passed in data */ %> </title>
