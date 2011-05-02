@@ -55,22 +55,22 @@ result where the call was made. `filename` can be a relative or absolute path.
 * `<%= {expression} %>` is a shortcut for print({expression}).
 * `<%@ 'filename' %>` is a shortcut for include(filename). Note that if it is constant, quotes
 must be used.
-``` javascript
-	<html>
-	  <head>
-	    <title> <%= data.title /* accessing passed in data */ %> </title>
-	  </head>
-	  <body>
-	  <ul>
-	  <%
-	    for(var i = 0 ; i<5 ; ++i) {
-	      print('<li>'+ i +'</li>');
-	    }
-	  %>
-	  </ul>
-	  </body>
-	  <%@ 'paragraph.tpl' %>
-	</html>
+```javascript
+<html>
+  <head>
+    <title> <%= data.title /* accessing passed in data */ %> </title>
+  </head>
+  <body>
+    <ul>
+      <%
+        for(var i = 0 ; i<5 ; ++i) {
+          print('<li>'+ i +'</li>');
+        }
+      %>
+    </ul>
+    <%@ 'paragraph.tpl' %>
+  </body>
+</html>
 ```
 
 
