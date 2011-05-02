@@ -55,7 +55,7 @@ result where the call was made. `filename` can be a relative or absolute path.
 * `<%= {expression} %>` is a shortcut for print({expression}).
 * `<%@ 'filename' %>` is a shortcut for include(filename). Note that if it is constant, quotes
 must be used.
-
+``` javascript
 	<html>
 	  <head>
 	    <title> <%= data.title /* accessing passed in data */ %> </title>
@@ -71,6 +71,6 @@ must be used.
 	  </body>
 	  <%@ 'paragraph.tpl' %>
 	</html>
-
+```
 
 
