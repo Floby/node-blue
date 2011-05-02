@@ -64,11 +64,9 @@ must be used.
   </head>
   <body>
     <ul>
-      <%
-        for(var i = 0 ; i<5 ; ++i) {
-          print('<li>'+ i +'</li>');
-        }
-      %>
+      <% for(var i = 0 ; i<5 ; ++i) { %>
+          <li> <%= i %> </li>
+      <% } %>
     </ul>
     <%@ 'paragraph.tpl' %>
   </body>
