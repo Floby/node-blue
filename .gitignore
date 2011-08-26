@@ -1,0 +1,4 @@
+# don't track vim boring files
+.*.swp
+.*.swo
+.*.un~
