@@ -48,8 +48,8 @@ the Template class follow more or less the Readable Stream interface (I plan on 
 
 The template syntax is inspired by JSP. you can include javascript code in the middle of your
 file if you put `<%` and `%>` around. by default the `print()` and `include()` function are available
-from the template. Others may be available depending on the sandboxing behaviour. `print(data)` will 
-write `data` out and `include('filename')` will process `filename` as a template and insert the 
+from the template. Others may be available depending on the sandboxing behaviour. `print(data)` will
+write `data` out and `include('filename')` will process `filename` as a template and insert the
 result where the call was made. `filename` can be a relative or absolute path.
 
 * `<%= {expression} %>` is a shortcut for print({expression}).

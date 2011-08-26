@@ -15,7 +15,7 @@
 	"type": "git",
 	"url": "http://github.com/Floby/node-blue.git"
     },
-    
+
     "engines": {
 	"node": ">= 0.2.2"
     }
