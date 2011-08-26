@@ -8,3 +8,7 @@ t.on('data', function(data) {
 });
 t.data({require:require});
 t.run();
+t.on('error', function(err) {
+  console.log(err.message);
+  console.log(err.stack);
+});
