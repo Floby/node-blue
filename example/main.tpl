@@ -5,6 +5,7 @@
     <body>
 	<%= "OUI" | lowercase %>
 	<%= data.require('sys') %>
+	<%@ "paragraphe.tpl" %>
 	<div>
 	    <%
 		for(var i=0 ; i<10 ; ++i) {
