@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
-var sys	    = require('sys'),
+var util = require('util'),
     blue    = require('./lib/blue');
 var t = new blue.Template('example/main.tpl');
 t.on('data', function(data) {
-    sys.print(data);
+    util.print(data);
 });
 t.data({require:require});
 t.run();
