@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/Floby/node-blue.png)](http://travis-ci.org/Floby/node-blue)
 Blue is a simple JSP-like, streamed template engine for [NodeJS](http://github.com/ry/node).
 
 ## Setup
