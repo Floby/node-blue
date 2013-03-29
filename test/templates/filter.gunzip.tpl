@@ -1,0 +1,2 @@
+<%= this.str | gunzip %>
+
