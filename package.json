@@ -9,7 +9,9 @@
   "dependencies": {
     "stream-stream": "~1.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodeunit":"0.7"
+  },
   "scripts": {
     "test": "nodeunit test/test-*.js"
   },
