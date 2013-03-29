@@ -10,7 +10,8 @@
     "stream-stream": "~1.1.0"
   },
   "devDependencies": {
-    "nodeunit":"0.7"
+    "nodeunit":"0.7",
+    "stream-sink":"1.x.x"
   },
   "scripts": {
     "test": "nodeunit test/test-*.js"

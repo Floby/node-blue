@@ -1,4 +1,4 @@
-var Sink = require('./sink');
+var Sink = require('stream-sink');
 var blue = require('../');
 
 exports.testOneFile = function(test) {
