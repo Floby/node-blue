@@ -3,7 +3,7 @@ var blue = require('../');
 
 exports.testSimpleInclude = function(test) {
     var sink = Sink();
-    var t = new blue.Template(__dirname + '/hw.include.tpl');
+    var t = new blue.Template(__dirname + '/templates/hw.include.tpl');
     t.pipe(sink).on('data', function(data) {
         test.equal(data.trim(), 'hello world!', "sink data should be identical");
         test.done();
@@ -16,7 +16,7 @@ exports.testSimpleInclude = function(test) {
 
 exports.testDoubleInclude = function(test) {
     var sink = Sink();
-    var t = new blue.Template(__dirname + '/hw.include.double.tpl');
+    var t = new blue.Template(__dirname + '/templates/hw.include.double.tpl');
     t.pipe(sink).on('data', function(data) {
         test.equal(data.trim(), 'hello world!\nhello world!', "sink data should be identical");
         test.done();
@@ -29,7 +29,7 @@ exports.testDoubleInclude = function(test) {
 
 exports.testNestedInclude = function(test) {
     var sink = Sink();
-    var t = new blue.Template(__dirname + '/hw.include.nested.tpl');
+    var t = new blue.Template(__dirname + '/templates/hw.include.nested.tpl');
     t.pipe(sink).on('data', function(data) {
         test.equal(data.trim(), 'hello world!', "sink data should be identical");
         test.done();

@@ -3,7 +3,7 @@ var blue = require('../');
 
 exports.testOneFile = function(test) {
     var sink = Sink();
-    var t = new blue.Template(__dirname + '/hw.tpl');
+    var t = new blue.Template(__dirname + '/templates/hw.tpl');
     t.pipe(sink).on('data', function(data) {
         test.equal(data.trim(), 'hello world!', "sink data should be identical");
         test.done();
@@ -12,7 +12,7 @@ exports.testOneFile = function(test) {
 
 exports.testOneFileWithMarkup = function(test) {
     var sink = Sink();
-    var t = new blue.Template(__dirname + '/hw.markup.tpl');
+    var t = new blue.Template(__dirname + '/templates/hw.markup.tpl');
     t.pipe(sink).on('data', function(data) {
         test.equal(data.trim(), 'hello world!', "sink data should be identical");
         test.done();
